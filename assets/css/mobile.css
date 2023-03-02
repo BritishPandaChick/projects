@@ -1,0 +1,103 @@
+/* === Sass variables === */
+/* ==== Basic Styles ==== */
+body {
+  background-color: #fdfcfb;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ==== Header ==== */
+header {
+  background-color: #385001;
+  position: fixed;
+  width: 100%;
+}
+header .navbar-brand {
+  font-size: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fdfcfb;
+}
+header ul li {
+  font-weight: bold;
+}
+header ul li a {
+  color: #fdfcfb;
+  font-size: 20px;
+  font-family: "Josefin Slab", serif;
+}
+header ul li a:hover {
+  color: #9dac38;
+}
+
+/* ==== Footer ==== */
+footer {
+  background-color: #385001;
+  padding: 15px 0;
+}
+
+#contact h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  color: #fdfcfb;
+  padding: 15px 0;
+}
+#contact p {
+  font-size: 18px;
+  color: #fdfcfb;
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 20px;
+}
+#contact p i {
+  color: #fdfcfb;
+  padding-right: 10px;
+}
+#contact li {
+  padding: 10px 0;
+}
+#contact li a {
+  color: #fdfcfb;
+}
+#contact li a:hover {
+  color: #9dac38;
+}
+
+#copyright p {
+  color: #fdfcfb;
+  font-size: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* === Projects === */
+#projects {
+  padding: 80px 40px;
+}
+#projects h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 25px;
+  color: #385001;
+}
+#projects img {
+  margin: 40px 0;
+}
+#projects h4 {
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  color: #385001;
+}
+#projects p {
+  font-size: 20px;
+  font-family: "Josefin Slab", serif;
+  line-height: 32px;
+}
+#projects a {
+  font-size: 20px;
+  color: #558976;
+  text-decoration: none;
+  font-family: "Josefin Slab", serif;
+}
+#projects a:hover {
+  color: #9dac38;
+}
+
+/*# sourceMappingURL=mobile.css.map */
