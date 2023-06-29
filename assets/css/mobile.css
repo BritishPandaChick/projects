@@ -1,0 +1,90 @@
+/* ==== Basic Styles ==== */
+body {
+  background-color: #fdfcfb;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p, a, li {
+  font-family: 'Josefin Slab', serif;
+  color: #333;
+}
+
+a {
+  color: #558976;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9dac38;
+}
+
+/* ==== Header ==== */
+nav {
+  background-color: #385001;
+}
+
+.navbar-brand {
+  color: #fdfcfb;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav-item {
+  font-family: 'Josefin Slab', serif;
+}
+
+.navbarScroll.navbarDark {
+  background-color: #558976;
+  color: #fdfcfb;
+}
+
+/* === Projects === */ 
+#projects h1 {
+  padding-top: 55px;
+}
+
+#projects .card-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+}
+
+#projects .card-text {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+#projects .btn {
+  color: #fdfcfb;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+/*=== Footer ===*/
+#footer {
+  background-color: #385001;
+  text-align: center;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-pinterest:hover, .fa-github:hover {
+  color: #9dac38;
+}
+
+.fab {
+  color: #fdfcfb;
+}
+
+#footer p {
+  color: #fdfcfb;
+  font-size: 16px;
+}
