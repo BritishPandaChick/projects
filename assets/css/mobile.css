@@ -24,28 +24,21 @@ a:hover {
 }
 
 /* ==== Header ==== */
-nav {
-  background-color: #385001;
-}
-
 .navbar-brand {
-  color: #fdfcfb;
+  color: #385001;
   font-family: 'Roboto Condensed', sans-serif;
-}
-
-.nav-item {
-  font-family: 'Josefin Slab', serif;
-  color: #fdfcfb;
-}
-
-.navbarScroll.navbarDark {
-  background-color: #558976;
-  color: #fdfcfb;
 }
 
 /* === Projects === */ 
 #projects h1 {
   padding-top: 55px;
+}
+
+#projects .placeholder {
+  width: 100%;
+  padding: 100px;
+  background-color: #385001;
+  color: #f6f2ea;
 }
 
 #projects .card-title {
@@ -59,7 +52,7 @@ nav {
 }
 
 #projects .btn {
-  color: #fdfcfb;
+  color: #f6f2ea;
   font-family: 'Arial', sans-serif;
   font-weight: bold;
 }
@@ -67,25 +60,10 @@ nav {
 /*=== Footer ===*/
 #footer {
   background-color: #385001;
-  text-align: center;
-  color: #fdfcfb;
   padding: 5px 0;
 }
 
-.social-icons {
-  font-size: 36px;
-  cursor: pointer;
-}
-
-.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-pinterest:hover, .fa-github:hover {
-  color: #9dac38;
-}
-
-.fab {
-  color: #fdfcfb;
-}
-
 #footer p {
-  font-size: 16px;
-  color: #fdfcfb;
+  font-size: 15px;
+  color: #f6f2ea
 }
