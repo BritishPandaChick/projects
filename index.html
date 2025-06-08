@@ -12,10 +12,10 @@
   <meta name="author" content="Sarah Bartley Dye, software developer" />
 
   <!-- Stylesheets -->
-  <link href="assets/css/normalize.css" rel="stylesheet">
+  <!-- <link href="assets/css/normalize.css" rel="stylesheet">
   <link href="assets/css/mobile.css" media="screen and (max-width: 640px)" rel="stylesheet">
   <link href="assets/css/tablet.css" media="screen and (min-width: 641px) and (max-width: 1024px)" rel="stylesheet">
-  <link href="assets/css/main.css" media="screen and (min-width: 1025px)" rel="stylesheet">
+  <link href="assets/css/main.css" media="screen and (min-width: 1025px)" rel="stylesheet"> -->
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/0b53956d39.js" crossorigin="anonymous"></script>
@@ -27,8 +27,8 @@
     href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap"
     rel="stylesheet">
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/img/portfolio-favicon.png">
@@ -36,63 +36,74 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Sarah Bartley-Dye</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="sarah-dye-resume-february-2025.pdf">Resume</a>
-                  </li>
-                </ul>
-              </div>
+        <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+            <div class="container is-fluid">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="http://britishpandachick.github.io">
+                        Sarah Bartley Dye
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+
+                    <div id="navbarMain" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item" href="#services">Services</a>
+                            <a class="navbar-item" href="#portfolio">Portfolio</a>
+                            <a class="navbar-item" href="#contact">Contact</a>
+                            <a class="navbar-item" href="sarah-dye-resume-february-2025.pdf">Resume</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </nav>
     </header>
 
     <main>
-        <section id="projects">
+        <section class="section" id="projects">
             <div class="container mt-3">
-                <h1 class="text-center">Projects</h1>
-                <div class="row">
-                    <div class="col-lg-4 mt-4">
-                        <div class="card">
-                            <div class="card-img-top text-center placeholder">Image goes here</div>
-                            <div class="card-body">
+                <h1 class="has-text-centered">Projects</h1>
+                <div class="columns">
+                    <div class="column is-4 mt-4">
+                        <div class="card portfolioContent">
+                            <div class="card-img-top has-text-centered placeholder">Image goes here</div>
+                            <div class="card-content">
                                 <h4 class="card-title">Bingo Cards</h4>
                                 <p class="card-text">Ruby application that creates Bingo cards.</p>
-                                <div class="text-center">
-                                    <a class="btn btn-success" href="https://github.com/BritishPandaChick/bingo-cards"
+                                <div class="grid gap-2 mx-auto">
+                                    <a class="button is-link" href="https://github.com/BritishPandaChick/bingo-cards"
                                     target="_blank">Code</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 mt-4">
+                    <div class="column is-4 mt-4">
                         <div class="card portfolioContent">
-                            <div class="card-img-top text-center placeholder">Image goes here</div>
-                            <div class="card-body">
+                            <div class="card-img-top has-text-centered placeholder">Image goes here</div>
+                            <div class="card-content">
                                 <h4 class="card-title">What should I Eat gem</h4>
                                 <p class="card-text">Ruby gem that finds the user a recipe to cook.</p>
-                                <div class="text-center">
-                                    <a class="btn btn-success" href="https://github.com/BritishPandaChick/what-should-i-eat"
+                                <div class="grid gap-2 mx-auto">
+                                    <a class="button is-link" href="https://github.com/BritishPandaChick/what-should-i-eat"
                                     target="_blank">Code</a>
                                 </div>
                             </div>
                         </div>                    
                     </div>
 
-                    <div class="col-lg-4 mt-4">
+                    <div class="column is-4 mt-4">
                         <div class="card portfolioContent">
-                            <div class="card-body">
-                                <div class="card-img-top text-center placeholder">Image goes here</div>
+                            <div class="card-img-top has-text-centered placeholder">Image goes here</div>
+                            <div class="card-content">
                                 <h4 class="card-title">Greeter gem</h4>
                                 <p class="card-text">Ruby gem that greets the user.</p>
-                                <div class="text-center">
-                                    <a class="btn btn-success" href="https://github.com/BritishPandaChick/greeter-gem"
+                                <div class="grid gap-2 mx-auto">
+                                    <a class="button is-link" href="https://github.com/BritishPandaChick/greeter-gem"
                                     target="_blank">Code</a>
                                 </div>
                             </div>
@@ -100,48 +111,54 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-4 mt-4">
-                        <div class="card portfolioContent">
-                            <img class="card-img-top" src="assets/img/skillcrush-github-repo-gallery-gimp.png" alt="Github Repo Gallery" style="width: 100%">
-                            <div class="card-body">
-                                <h4 class="card-title">Github Repo Gallery</h4>
-                                <p class="card-text">Gallery of Github repos that allows users to search for specific repos.</p>
-                                <div class="text-center">
-                                    <a class="btn btn-success" href="https://github.com/BritishPandaChick/github-repo-gallery"
+                <div class="column is-4 mt-4">
+                    <div class="card portfolioContent">
+                        <figure class="image card-img-top">
+                            <img src="assets/img/skillcrush-github-repo-gallery-gimp.png" alt="Github Repo Gallery" style="width: 100%">
+                        </figure>
+                        <div class="card-content">
+                            <h4 class="card-title">Github Repo Gallery</h4>
+                            <p class="card-text">Gallery of Github repos that allows users to search for specific repos.</p>
+                            <div class="grid gap-2 mx-auto">
+                                <a class="button is-link" href="https://github.com/BritishPandaChick/github-repo-gallery"
                                 target="_blank">Code</a>
-                                    <a class="btn btn-primary" href="https://britishpandachick.github.io/github-repo-gallery/">Project</a>
-                                </div>
+                                <a class="button is-link" href="https://britishpandachick.github.io/github-repo-gallery/">Project</a>
                             </div>
-                        </div>    
-                    </div>
+                        </div>
+                    </div>    
+                </div>
 
-                    <div class="col-lg-4 mt-4">
-                        <div class="card portfolioContent">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/img/skillcrush-reveal-image-gimp.png" alt="Image Generator" style="width: 100%">
-                                <h4 class="card-title">Image Generator</h4>
-                                <p class="card-text">Static one page website that reveals an image once the user clicks a button.</p>
-                                <div class="text-center">
-                                    <a class="btn btn-success" href="https://github.com/BritishPandaChick/js-l12-challenge-01"
+                <div class="column is-4 mt-4">
+                    <div class="card portfolioContent">
+                        <figure class="image card-img-top">
+                            <img src="assets/img/skillcrush-reveal-image-gimp.png" alt="Image Generator" style="width: 100%">
+                        </figure>
+                            
+                        <div class="card-content">
+                            <h4 class="card-title">Image Generator</h4>
+                            <p class="card-text">Static one page website that reveals an image once the user clicks a button.</p>
+                            <div class="grid gap-2 mx-auto">
+                                <a class="button is-link" href="https://github.com/BritishPandaChick/js-l12-challenge-01"
                                     target="_blank">Code</a>
-                                    <a class="btn btn-primary" href="https://britishpandachick.github.io/js-l12-challenge-01/">Project</a>
-                                </div>
+                                <a class="button is-link" href="https://britishpandachick.github.io/js-l12-challenge-01/">Project</a>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-4 mt-4">
-                        <div class="card portfolioContent">
-                            <img class="card-img-top" src="assets/img/skillcrush-sharon-pet-rescue-gimp.png" alt="Sharon's Pet Rescue" style="width: 100%">
-                            <div class="card-body">
-                                <h4 class="card-title">Sharon's Pet Rescue</h4>
-                                <p class="card-text">Static one page website that shows users the status of pets at the rescue.</p>
-                                <div class="text-center">
-                                    <a class="btn btn-success" href="https://github.com/BritishPandaChick/sharon-pet-rescue"
+                <div class="column is-4 mt-4">
+                    <div class="card portfolioContent">
+                        <figure class="image card-img-top">
+                            <img src="assets/img/skillcrush-sharon-pet-rescue-gimp.png" alt="Sharon's Pet Rescue" style="width: 100%">
+                        </figure>
+                            
+                        <div class="card-content">
+                            <h4 class="card-title">Sharon's Pet Rescue</h4>
+                            <p class="card-text">Static one page website that shows users the status of pets at the rescue.</p>
+                            <div class="grid gap-2 mx-auto">
+                                <a class="button is-link" href="https://github.com/BritishPandaChick/sharon-pet-rescue"
                                     target="_blank">Code</a>
-                                    <a class="btn btn-primary" href="https://britishpandachick.github.io/sharon-pet-rescue/">Project</a>
-                                </div>
+                                <a class="button is-link" href="https://britishpandachick.github.io/sharon-pet-rescue/">Project</a>
                             </div>
                         </div>
                     </div>
@@ -544,16 +561,13 @@
         </section>
     </main>
 
-    <footer id="footer">
-        <div class="container-fluid">
-            <p class="text-center">&copy;2018-2025, Sarah Bartley-Dye | All Rights Reserved</p>
-        </div>
-    </footer>
-    
-    <!-- JS File -->
-    <script type="text/javascript" src="assets/js/script.js"></script>
-    
-    <!-- Bootstrap JS file -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <footer class="footer" id="footer">
+    <div class="content">
+      <p class="has-text-centered">&copy; 2018-2025, Sarah Bartley Dye | Made with <a href="https://bulma.io/" target="_blank">Bulma</a>.</p>
+    </div>
+  </footer>
+
+  <!-- JS File -->
+  <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
