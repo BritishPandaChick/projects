@@ -1,6 +1,6 @@
 /* ==== Basic Styles ==== */
 body {
-  background-color: #fdfcfb;
+  background-color: #EDF2F7;;
   width: 100%;
   margin: 0 auto;
 }
@@ -15,30 +15,55 @@ p, a, li {
 }
 
 a {
-  color: #558976;
+  color: #48523D;
   text-decoration: none;
 }
 
 a:hover {
-  color: #9dac38;
+  color: #B5C6B8;
 }
 
 /* ==== Header ==== */
-.navbar-brand {
-  color: #385001;
+.navbar-brand a {
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+#navbarMain a {
+  font-family: 'Josefin Slab', serif;
+}
+
+/* === Banner === */
+.bg-image {
+  height: 100vh;
+  margin-top: 25px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero_title {
+  font-size: 3rem;
+}
+
+.hero_desc p {
+  font-size: 1.4rem;
 }
 
 /* === Projects === */ 
 #projects h1 {
-  padding-top: 55px;
+  font-size: 1.5rem;
 }
 
 #projects .placeholder {
   width: 100%;
   padding: 100px;
-  background-color: #385001;
-  color: #f6f2ea;
+  background-color: #8FA2CA;
+  color: #EDF2F7;
 }
 
 #projects .card-title {
@@ -48,22 +73,52 @@ a:hover {
 
 #projects .card-text {
   font-size: 1.3rem;
-  color: #333;
+  color: #51555B;
 }
 
-#projects .btn {
-  color: #f6f2ea;
-  font-family: 'Arial', sans-serif;
-  font-weight: bold;
+/* === Contact ===*/ 
+#contact {
+  border: 2px solid #8FA2CA;
+  padding-bottom: 15px;
+}
+
+#contact h1 {
+  font-size: 1.5rem;
+}
+
+#contact p {
+  font-size: 1.3rem;
+  color: #51555B;
+}
+
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-pinterest:hover, .fa-github:hover {
+  color: #B5C6B8;
+}
+
+.fab {
+  color: #8FA2CA;
 }
 
 /*=== Footer ===*/
 #footer {
-  background-color: #385001;
+  background-color: #8FA2CA;
   padding: 5px 0;
 }
 
 #footer p {
   font-size: 15px;
-  color: #f6f2ea
+  color: #48523D;
+}
+
+#footer a {
+  color:#48523D;
+}
+
+#footer a:hover {
+  color: #B5C6B8;
 }
