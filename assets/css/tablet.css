@@ -20,7 +20,16 @@ a {
 }
 
 a:hover {
-  color: #2670a3;
+  color: #034372;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1.3rem;
 }
 
 /* ==== Header ==== */
@@ -39,7 +48,7 @@ header .navbar-menu .navbar-item {
 
 header .navbar .navbar-item:hover {
   background-color: #2670a3;
-  color: #768cb9;
+  color: #034372;
 }
 
 /* === Projects === */ 
@@ -66,7 +75,7 @@ header .navbar .navbar-item:hover {
 
 #projects .button:hover {
   background-color: #2670a3;
-  color:#768cb9;
+  color:#034372;
 }
 
 /* === Contact ===*/ 
