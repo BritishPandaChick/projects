@@ -33,75 +33,26 @@ a:hover {
 }
 
 /* ==== Header ==== */
-header .navbar {
+header {
   background-color: #03263a;
+  padding: 50px 0;
 }
 
-header .navbar-brand .navbar-item {
+header h1 {
   font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
   color: #fff;
-}
-
-header .navbar-menu .navbar-item {
-  color: #fff;
-}
-
-header .navbar .navbar-item:hover {
-  background-color: #2670a3;
-  color: #034372;
 }
 
 /* === Projects === */ 
-#projects h1 {
+#top-row h4, #bottom-row h4 {
   font-size: 2rem;
-}
-
-#projects .placeholder {
-  width: 100%;
-  padding: 100px;
-  background-color: #034372;
-  color: #fff;
-}
-
-#projects p {
-  line-height: 35px;
   padding-bottom: 15px;
 }
 
-#projects .button {
-  background-color: #034372;
-  color: #fff;
-}
-
-#projects .button:hover {
-  background-color: #2670a3;
-  color:#034372;
-}
-
-/* === Contact ===*/ 
-#contact {
+#top-row p, #bottom-row p {
+  font-size: 1.5rem;
   padding-bottom: 15px;
-}
-
-#contact h2 {
-  font-size: 2rem;
-}
-
-#contact p {
-  font-size: 1.3rem;
-}
-
-.social-icons {
-  font-size: 36px;
-  cursor: pointer;
-}
-
-.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-pinterest:hover, .fa-github:hover {
-  color: #768cb9;
-}
-
-.fab {
-  color: #03263a;
 }
 
 /*=== Footer ===*/
